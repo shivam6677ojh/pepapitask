@@ -1,5 +1,4 @@
 import express from "express";
-
 const app = express();
 
 // Middleware to parse JSON and urlencoded bodies
@@ -98,7 +97,6 @@ app.delete("/tasks/:id", (req, res) => {
     }
 
     tasks.splice(index, 1);
-
     res.status(204).send();
 });
 
